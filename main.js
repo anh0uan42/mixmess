@@ -15,7 +15,9 @@ const generateMessage = (arr1, arr2, arr3, arr4, arr5) => {
         verb = arr4[Math.floor(Math.random()*arr4.length)]
     }
     const action = arr5[Math.floor(Math.random()*arr5.length)]
-    console.log(`${noun} ${verb} to go ${action} this weekend`)
+    const quote = `${noun} ${verb} to go ${action} this weekend`
+    const elem = document.getElementById("displaymess")
+    elem.innerHTML = quote
 }
 
 generateMessage(noun1, sunVerb, windVerb, seaVerb, act)
